@@ -1,0 +1,220 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  background-color: hsl(0, 0%, 94%);
+}
+
+
+.calculator {
+  
+  background-color: hsl(0, 0%, 100%);
+  margin: 0 auto;
+  padding: 50px;
+  height: 430px;
+  width: 800px;
+  border-radius: 16px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  padding-bottom: 45px;
+  margin-bottom: 30px;
+}
+
+.form::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 1px;
+  bottom: 0;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.form__btn {
+  position: absolute;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  bottom: -40px;
+  right: 0;
+  background-image: url(../assets/images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: hsl(259, 100%, 65%);
+}
+
+.form__label {
+  position: relative;
+}
+
+.form__label:not(:last-child) {
+  margin-right: 20px;
+  
+}
+
+.form__label::before {
+  content: 'This field is required';
+  position: absolute;
+  bottom: -33px;
+  font-size: 14px;
+  font-style: italic;
+  color: #e94444;
+  display: none;
+}
+
+.form__label--error::before {
+  display: block;
+}
+
+
+.form__descr {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  color:hsl(0, 1%, 44%);
+}
+
+.form__descr--error {
+  color: #e94444;
+}
+
+.form__input {
+  position: relative;
+  max-width: 150px;
+  outline: none;
+  max-lines: 4;
+  padding: 15px 20px;
+  border-radius: 14px;
+  border: 1px solid ;
+  border-color: hsl(0, 0%, 86%);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form__input
+
+.form__input::before.form__input--error {
+  display: block;
+  
+}
+
+.form__input--error {
+  border-color: #e94444;
+}
+
+.calculator__content-item {
+  margin: 0;
+  font-style: italic;
+  font-size: 75px;
+  font-weight: 800;
+  line-height: 110%;
+  color: hsl(0, 0%, 8%);
+}
+
+.calculator__content-number {
+  font-size: 75px;
+  color: hsl(259, 100%, 65%);
+  font-weight: 800;
+  font-style: italic;
+}

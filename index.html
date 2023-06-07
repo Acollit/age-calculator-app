@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+  <title>Age calculator app</title>
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="calculator">
+      <form class="form">
+        <label id="LabelDay" class="form__label">
+          <p id="DescrDay" class="form__descr">DAY</p>
+          <input id="DayInput" type="number" max="31" class="form__input" placeholder="DD">
+        </label>
+        <label id="LabelMounth" class="form__label">
+          <p id="DescrMonth" class="form__descr">MONTH</p>
+          <input id="MounthInput" type="number" max="12" class="form__input" placeholder="MM">
+        </label>
+        <label id="LabelYear" class="form__label">
+          <p id="DescrYear" class="form__descr">YEAR</p>
+          <input id="YearInput" type="number" max="3000" class="form__input" placeholder="YYYY">
+        </label>
+        <button id="btn" type="button" class="form__btn">
+        </button>
+      </form>
+      <div class="calculator__content">
+        <p class="calculator__content-item">
+          <span id="years" class="calculator__content-number">
+            --
+          </span>
+
+          years
+        </p>
+        <p class="calculator__content-item">
+          <span id="months" class="calculator__content-number">
+            --
+          </span>
+          months
+        </p>
+        <p class="calculator__content-item">
+          <span id="days" class="calculator__content-number">
+            --
+          </span>
+          days
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
